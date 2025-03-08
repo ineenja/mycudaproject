@@ -1,0 +1,24 @@
+"C:\Program Files\JetBrains\CLion2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion2024.3/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL -B C:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl
+CMake Deprecation Warning at demodulation/unittest.cmake:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+Call Stack (most recent call first):
+  demodulation/CMakeLists.txt:19 (include)
+
+
+CMake Deprecation Warning at myparser/unittest.cmake:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+Call Stack (most recent call first):
+  myparser/CMakeLists.txt:19 (include)
+
+
+-- Configuring done (1.9s)
+-- Generating done (0.2s)
+-- Build files have been written to: C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/cmake-build-cudaprojectcl

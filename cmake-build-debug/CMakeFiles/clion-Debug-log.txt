@@ -1,0 +1,40 @@
+"C:\Program Files\JetBrains\CLion2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion2024.3/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL -B C:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-debug
+-- The CUDA compiler identification is NVIDIA 12.8.61
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - failed
+-- Check for working CUDA compiler: C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/bin/nvcc.exe
+-- Check for working CUDA compiler: C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/bin/nvcc.exe - broken
+CMake Error at C:/Program Files/JetBrains/CLion2024.3/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCUDACompiler.cmake:59 (message):
+  The CUDA compiler
+
+    "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/bin/nvcc.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: 'C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sayjpy'
+    
+    Run Build Command(s): "C:/Program Files/JetBrains/CLion2024.3/bin/ninja/win/x64/ninja.exe" -v cmTC_274f4
+    [1/2] "C:\PROGRA~1\NVIDIA GPU Computing Toolkit\CUDA\v12.8\bin\nvcc.exe" -forward-unknown-to-host-compiler   -D_WINDOWS -Xcompiler=" /EHsc"  -Xcompiler=" -Ob0 -Od /RTC1" "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi -MD -MT CMakeFiles\cmTC_274f4.dir\main.cu.obj -MF CMakeFiles\cmTC_274f4.dir\main.cu.obj.d -x cu -c C:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-debug\CMakeFiles\CMakeScratch\TryCompile-sayjpy\main.cu -o CMakeFiles\cmTC_274f4.dir\main.cu.obj -Xcompiler=-FdCMakeFiles\cmTC_274f4.dir\,-FS
+    nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+    main.cu
+    tmpxft_00003c78_00000000-10_main.cudafe1.cpp
+    [2/2] C:\WINDOWS\system32\cmd.exe /C "cd . && "C:\Program Files\JetBrains\CLion2024.3\bin\cmake\win\x64\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_274f4.dir --rc=rc --mt=CMAKE_MT-NOTFOUND --manifests  -- "C:\PROGRA~1\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\link.exe" /nologo CMakeFiles\cmTC_274f4.dir\main.cu.obj  /out:cmTC_274f4.exe /implib:cmTC_274f4.lib /pdb:cmTC_274f4.pdb /version:0.0 /debug /INCREMENTAL  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib -LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/lib/x64" && cd ."
+    FAILED: cmTC_274f4.exe 
+    C:\WINDOWS\system32\cmd.exe /C "cd . && "C:\Program Files\JetBrains\CLion2024.3\bin\cmake\win\x64\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_274f4.dir --rc=rc --mt=CMAKE_MT-NOTFOUND --manifests  -- "C:\PROGRA~1\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\Hostx64\x64\link.exe" /nologo CMakeFiles\cmTC_274f4.dir\main.cu.obj  /out:cmTC_274f4.exe /implib:cmTC_274f4.lib /pdb:cmTC_274f4.pdb /version:0.0 /debug /INCREMENTAL  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib -LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/lib/x64" && cd ."
+    RC Pass 1: command "rc /fo CMakeFiles\cmTC_274f4.dir/manifest.res CMakeFiles\cmTC_274f4.dir/manifest.rc" failed (exit code 0) with the following output:
+    no such file or directory
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:7 (project)
+
+
+-- Configuring incomplete, errors occurred!

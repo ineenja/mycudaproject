@@ -1,0 +1,19 @@
+# ninja log v6
+3554	4042	7631359251624346	CUDAProjectCL/binaries/modulation.dll	30d136a01b0156e5
+8	4132	7631298970543231	CMakeFiles/myCUDAproject.dir/main.cu.obj	6e55223eb7922def
+4132	4363	7631299011787093	myCUDAproject.exe	3aaa39588954596
+188	533	7631359213349800	parsing/CMakeFiles/parsing.dir/src/parsing.cpp.obj	be2e98265166d5fe
+8	217	7631363959637187	CUDAProjectCL/binaries/parsing.dll	81880600a478fed5
+183	3534	7631359213299949	demodulation/CMakeFiles/demodulation.dir/src/demodulation.cu.obj	eb0e599c34a910cf
+6	3554	7631359211528403	modulation/CMakeFiles/modulation.dir/src/modulation.cu.obj	660014d641c176f5
+3545	4039	7631359251594272	CUDAProjectCL/binaries/demodulation.dll	12a92a92c71b98ae
+3545	4039	7631359251594272	demodulation/demodulation.lib	12a92a92c71b98ae
+3554	4042	7631359251624346	modulation/modulation.lib	30d136a01b0156e5
+40	4569	7631365087719552	CMakeFiles/CUDAProjectCL.dir/main.cu.obj	96a0a44e71e870f5
+25	256	7631365087560301	myparser/CMakeFiles/myparser.dir/src/myparser.cpp.obj	8c5f029740782326
+257	635	7631365089873808	CUDAProjectCL/binaries/myparser.dll	47ce6781c4765322
+257	635	7631365089873808	myparser/myparser.lib	47ce6781c4765322
+26	2757	7631366056763084	myparser/CMakeFiles/myparser.dir/src/myparser.cu.obj	289ebe339ac15cbb
+2758	3014	7631366086023113	CUDAProjectCL/binaries/myparser.dll	1cb28f70cccb02fb
+2758	3014	7631366086023113	myparser/myparser.lib	1cb28f70cccb02fb
+3015	3382	7631366086651318	CUDAProjectCL/binaries/CUDAProjectCL.exe	ccde825dc814521c
