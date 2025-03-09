@@ -50,6 +50,9 @@ target_link_libraries(${PROJECT_NAME} demodulation)
 add_subdirectory(${PROJECT_SOURCE_DIR}/myparser)
 target_link_libraries(${PROJECT_NAME} myparser)
 
+add_subdirectory(${PROJECT_SOURCE_DIR}/filtering)
+target_link_libraries(${PROJECT_NAME} filtering)
+
 target_link_libraries(${PROJECT_NAME} CUDA::cudart CUDA::cuda_driver)
 target_include_directories(${PROJECT_NAME} PUBLIC  "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/include")
 

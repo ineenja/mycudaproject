@@ -11,7 +11,8 @@
 						1,
 						3,
 						4,
-						5
+						5,
+						6
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -52,7 +53,7 @@
 					"source" : "googletests/gtest",
 					"targetIndexes" : 
 					[
-						4
+						7
 					]
 				},
 				{
@@ -67,9 +68,9 @@
 					"source" : "modulation",
 					"targetIndexes" : 
 					[
-						5,
-						6,
-						7
+						8,
+						9,
+						10
 					]
 				},
 				{
@@ -101,9 +102,26 @@
 					"source" : "myparser",
 					"targetIndexes" : 
 					[
-						8,
-						9,
-						10
+						11,
+						12,
+						13
+					]
+				},
+				{
+					"build" : "filtering",
+					"jsonFile" : "directory-filtering-Debug-f29d66b77fa9c4fc450d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "filtering",
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						6
 					]
 				}
 			],
@@ -116,7 +134,8 @@
 						1,
 						3,
 						4,
-						5
+						5,
+						6
 					],
 					"directoryIndexes" : 
 					[
@@ -149,7 +168,7 @@
 					"parentIndex" : 1,
 					"targetIndexes" : 
 					[
-						4
+						7
 					]
 				},
 				{
@@ -161,9 +180,9 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						5,
-						6,
-						7
+						8,
+						9,
+						10
 					]
 				},
 				{
@@ -189,9 +208,23 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						8,
-						9,
-						10
+						11,
+						12,
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "filtering",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						6
 					]
 				}
 			],
@@ -200,7 +233,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CUDAProjectCL::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CUDAProjectCL-Debug-cdddd2d2423c17c46fd9.json",
+					"jsonFile" : "target-CUDAProjectCL-Debug-458767b152f601ef0904.json",
 					"name" : "CUDAProjectCL",
 					"projectIndex" : 0
 				},
@@ -214,7 +247,7 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "demodulation_t::@9969b8f5e2c837d817b5",
-					"jsonFile" : "target-demodulation_t-Debug-ed89bf8a1ed3fa406050.json",
+					"jsonFile" : "target-demodulation_t-Debug-6f38d3bc0d642efaf020.json",
 					"name" : "demodulation_t",
 					"projectIndex" : 4
 				},
@@ -224,6 +257,27 @@
 					"jsonFile" : "target-demodulation_tconf-Debug-37cb0ffd1157ac895bb8.json",
 					"name" : "demodulation_tconf",
 					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "filtering::@13b02bab2b0936666b23",
+					"jsonFile" : "target-filtering-Debug-7854a754527c64c63c12.json",
+					"name" : "filtering",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "filtering_t::@13b02bab2b0936666b23",
+					"jsonFile" : "target-filtering_t-Debug-e26bc661989080c27fce.json",
+					"name" : "filtering_t",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "filtering_tconf::@13b02bab2b0936666b23",
+					"jsonFile" : "target-filtering_tconf-Debug-b13aebca2a8442f8cddc.json",
+					"name" : "filtering_tconf",
+					"projectIndex" : 6
 				},
 				{
 					"directoryIndex" : 2,
@@ -242,7 +296,7 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "modulation_t::@4c4c1f85e904cb2cbf88",
-					"jsonFile" : "target-modulation_t-Debug-31f5d0f1be1d830425a1.json",
+					"jsonFile" : "target-modulation_t-Debug-0fd0a491d45fbad69631.json",
 					"name" : "modulation_t",
 					"projectIndex" : 3
 				},
@@ -263,7 +317,7 @@
 				{
 					"directoryIndex" : 5,
 					"id" : "myparser_t::@38921ffbf2a0037a72ee",
-					"jsonFile" : "target-myparser_t-Debug-4983f25b8f68c241831e.json",
+					"jsonFile" : "target-myparser_t-Debug-f1499448ee79ac67abcf.json",
 					"name" : "myparser_t",
 					"projectIndex" : 5
 				},

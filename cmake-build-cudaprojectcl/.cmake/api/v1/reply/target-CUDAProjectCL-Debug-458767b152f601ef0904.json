@@ -53,13 +53,19 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 53,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 56,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 54,
+				"line" : 57,
 				"parent" : 0
 			}
 		]
@@ -100,7 +106,15 @@
 					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/myparser/include"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 5,
+					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/filtering"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/filtering/include"
+				},
+				{
+					"backtrace" : 7,
 					"isSystem" : true,
 					"path" : "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/include"
 				}
@@ -123,16 +137,20 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 3,
-			"id" : "demodulation::@9969b8f5e2c837d817b5"
-		},
-		{
 			"backtrace" : 4,
 			"id" : "myparser::@38921ffbf2a0037a72ee"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "modulation::@4c4c1f85e904cb2cbf88"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "demodulation::@9969b8f5e2c837d817b5"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "filtering::@13b02bab2b0936666b23"
 		}
 	],
 	"id" : "CUDAProjectCL::@6890427a1f51a3e7e1df",
@@ -165,11 +183,16 @@
 			},
 			{
 				"backtrace" : 5,
+				"fragment" : "filtering\\filtering.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
 				"fragment" : "\"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\lib\\x64\\cudart.lib\"",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 5,
+				"backtrace" : 6,
 				"fragment" : "\"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\lib\\x64\\cuda.lib\"",
 				"role" : "libraries"
 			},
