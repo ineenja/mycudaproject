@@ -1,44 +1,52 @@
 #include <vector>
 #include <iostream>
 
-#include "cuda_runtime.h"
-#include "modulation/modulation.cuh"
-#include "demodulation/demodulation.cuh"
-#include "myparser/myparser.cuh"
-
-__global__ void square(int *array, int n) {
-    int tid = blockDim.x * blockIdx.x + threadIdx.x;
-    if (tid < n)
-        array[tid] = array[tid] * array[tid];
-}
+//#include "modulation/modulation.cuh"
+//#include "demodulation/demodulation.cuh"
+//#include "myparser/myparser.cuh"
+#include "filtering/filtering.cuh"
 
 int main() {
 
-    std::vector<int> vec0(2048);
-    for (int i = 0; i < vec0.size(); ++i) {
-        vec0[i] = i + 2;
+    int m = 5, n = 5;
+    std::vector<float> inputSignal = {1, 0, 0 ,0 ,0};
+    std::vector<float> outputSignal(inputSignal.size());
+    std::vector<float> numerator = {2, 2, 3 ,1 ,2};
+    std::vector<float> denumerator = {1, -1, 0.1, 2, 0.1};
+    std::vector<float> memory(inputSignal.size(), 0.0);
+    int order = 5;
+
+    float *inputSignalPtr, *outputSignalPtr;
+    float *numeratorPtr, *denumeratorPtr;
+    float *memoryPtr;
+
+    cudaMalloc(&inputSignalPtr, order * sizeof(float ));
+    cudaMalloc(&outputSignalPtr, order * sizeof(float ));
+    cudaMalloc(&numeratorPtr, n * sizeof(float ));
+    cudaMalloc(&denumeratorPtr, m * sizeof(float ));
+    cudaMalloc(&memoryPtr, order * sizeof(float ));
+
+    cudaMemcpy(inputSignalPtr, inputSignal.data(), order * sizeof(float), cudaMemcpyHostToDevice);
+    cudaMemcpy(outputSignalPtr, outputSignal.data(), order * sizeof(float), cudaMemcpyHostToDevice);
+    cudaMemcpy(numeratorPtr, numerator.data(), n * sizeof(float), cudaMemcpyHostToDevice);
+    cudaMemcpy(denumeratorPtr, denumerator.data(), m * sizeof(float), cudaMemcpyHostToDevice);
+    cudaMemcpy(memoryPtr, memory.data(), order * sizeof(float), cudaMemcpyHostToDevice);
+
+    int blockSize = 256;
+    int gridSize = (order + blockSize - 1) / blockSize;
+    filterKernel<<<gridSize, blockSize>>>(inputSignalPtr, outputSignalPtr, order, numeratorPtr, denumeratorPtr, memoryPtr, order);
+
+    cudaMemcpy(outputSignal.data(), outputSignalPtr, order * sizeof(float), cudaMemcpyDeviceToHost);
+
+    cudaFree(inputSignalPtr);
+    cudaFree(outputSignalPtr);
+    cudaFree(numeratorPtr);
+    cudaFree(denumeratorPtr);
+    cudaFree(memoryPtr);
+
+    for (float i : outputSignal){
+        std::cout << i << " ";
     }
-
-    int *cudaVec;
-
-    cudaMalloc(&cudaVec, vec0.size() * sizeof(int));
-    cudaMemcpy(cudaVec, vec0.data(), vec0.size() * sizeof(int), cudaMemcpyHostToDevice);
-
-    // Launch the Vector Add CUDA Kernel
-    int threadsPerBlock = 1024;
-    int blocksPerGrid = (vec0.size() + threadsPerBlock - 1) / threadsPerBlock;
-    std::cout << "launching kernel blocksPerGrid " << blocksPerGrid << ", threadsPerBlock " << threadsPerBlock << std::endl;
-    square<<<blocksPerGrid, threadsPerBlock>>>(cudaVec, vec0.size());
-
-    cudaMemcpy(vec0.data(), cudaVec, vec0.size() * sizeof(int), cudaMemcpyDeviceToHost);
-
-    cudaFree(cudaVec);
-
-    for (int i = 0; i < 11; ++i) {
-        std::cout << vec0[i] << " ";
-    }
-    std::cout << std::endl;
-
 
     return 0;
 }

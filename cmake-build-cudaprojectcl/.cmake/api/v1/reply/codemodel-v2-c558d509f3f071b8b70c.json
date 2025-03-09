@@ -1,0 +1,345 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						3,
+						4,
+						5,
+						6
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "googletests",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-googletests-Debug-2537a32c154ffc49e12d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "googletests"
+				},
+				{
+					"build" : "googletests/gtest",
+					"jsonFile" : "directory-googletests.gtest-Debug-aaf4e52b78189a04271b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "googletests/gtest",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "modulation",
+					"jsonFile" : "directory-modulation-Debug-a81a377cee2a9b07fd7a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "modulation",
+					"targetIndexes" : 
+					[
+						8,
+						9,
+						10
+					]
+				},
+				{
+					"build" : "demodulation",
+					"jsonFile" : "directory-demodulation-Debug-73a0051a2d8afee31b83.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "demodulation",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3
+					]
+				},
+				{
+					"build" : "filtering",
+					"jsonFile" : "directory-filtering-Debug-f29d66b77fa9c4fc450d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "filtering",
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"build" : "myparser",
+					"jsonFile" : "directory-myparser-Debug-3e5ba7c30cae36bf8dcd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "myparser",
+					"targetIndexes" : 
+					[
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						3,
+						4,
+						5,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CUDAProjectCL",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "unittest",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "gtest",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "modulation",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						8,
+						9,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "demodulation",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "filtering",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "myparser",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CUDAProjectCL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CUDAProjectCL-Debug-4d26abb9742400b8d0f8.json",
+					"name" : "CUDAProjectCL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "demodulation::@9969b8f5e2c837d817b5",
+					"jsonFile" : "target-demodulation-Debug-de65006cee7c1dd8a2e1.json",
+					"name" : "demodulation",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "demodulation_t::@9969b8f5e2c837d817b5",
+					"jsonFile" : "target-demodulation_t-Debug-9cfb232aa3fe30230304.json",
+					"name" : "demodulation_t",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "demodulation_tconf::@9969b8f5e2c837d817b5",
+					"jsonFile" : "target-demodulation_tconf-Debug-37cb0ffd1157ac895bb8.json",
+					"name" : "demodulation_tconf",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "filtering::@13b02bab2b0936666b23",
+					"jsonFile" : "target-filtering-Debug-c5c68dee99051fe56a5c.json",
+					"name" : "filtering",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "filtering_t::@13b02bab2b0936666b23",
+					"jsonFile" : "target-filtering_t-Debug-d8d2bd0c1b710e2f957c.json",
+					"name" : "filtering_t",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "filtering_tconf::@13b02bab2b0936666b23",
+					"jsonFile" : "target-filtering_tconf-Debug-231c73d5db8a91c4ecdc.json",
+					"name" : "filtering_tconf",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "gtest::@9a0cee8afed2a44c6706",
+					"jsonFile" : "target-gtest-Debug-518db09b74de763aab6a.json",
+					"name" : "gtest",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "modulation::@4c4c1f85e904cb2cbf88",
+					"jsonFile" : "target-modulation-Debug-1475c72c436051558bb1.json",
+					"name" : "modulation",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "modulation_t::@4c4c1f85e904cb2cbf88",
+					"jsonFile" : "target-modulation_t-Debug-9f2c1cdcd1c08be62442.json",
+					"name" : "modulation_t",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "modulation_tconf::@4c4c1f85e904cb2cbf88",
+					"jsonFile" : "target-modulation_tconf-Debug-341927c3ca326eaa991a.json",
+					"name" : "modulation_tconf",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "myparser::@38921ffbf2a0037a72ee",
+					"jsonFile" : "target-myparser-Debug-1308d8aa8462433839f3.json",
+					"name" : "myparser",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "myparser_t::@38921ffbf2a0037a72ee",
+					"jsonFile" : "target-myparser_t-Debug-484707728f2aaceeb147.json",
+					"name" : "myparser_t",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "myparser_tconf::@38921ffbf2a0037a72ee",
+					"jsonFile" : "target-myparser_tconf-Debug-ae4f11e4444d10a7318f.json",
+					"name" : "myparser_tconf",
+					"projectIndex" : 6
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/cmake-build-cudaprojectcl",
+		"source" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

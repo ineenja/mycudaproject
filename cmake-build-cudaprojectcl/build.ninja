@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_CUDAProjectCL: phony || cmake_object_ord
 build CMakeFiles\CUDAProjectCL.dir\main.cu.obj: CUDA_COMPILER__CUDAProjectCL_unscanned_Debug C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\main.cu || cmake_object_order_depends_target_CUDAProjectCL
   DEP_FILE = CMakeFiles\CUDAProjectCL.dir\main.cu.obj.d
   FLAGS = -D_WINDOWS -Xcompiler=" /EHsc" -Xcompiler=" -Ob0 -Od /RTC1" -std=c++17 "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi
-  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\include -isystem "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include"
+  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\include -isystem "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include"
   OBJECT_DIR = CMakeFiles\CUDAProjectCL.dir
   OBJECT_FILE_DIR = CMakeFiles\CUDAProjectCL.dir
   TARGET_COMPILE_PDB = CMakeFiles\CUDAProjectCL.dir\
@@ -66,10 +66,10 @@ build CMakeFiles\CUDAProjectCL.dir\main.cu.obj: CUDA_COMPILER__CUDAProjectCL_uns
 #############################################
 # Link the executable CUDAProjectCL\binaries\CUDAProjectCL.exe
 
-build CUDAProjectCL\binaries\CUDAProjectCL.exe: CUDA_EXECUTABLE_LINKER__CUDAProjectCL_Debug CMakeFiles\CUDAProjectCL.dir\main.cu.obj | modulation\modulation.lib demodulation\demodulation.lib myparser\myparser.lib filtering\filtering.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cudart.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cuda.lib || CUDAProjectCL\binaries\demodulation.dll CUDAProjectCL\binaries\filtering.dll CUDAProjectCL\binaries\modulation.dll CUDAProjectCL\binaries\myparser.dll
+build CUDAProjectCL\binaries\CUDAProjectCL.exe: CUDA_EXECUTABLE_LINKER__CUDAProjectCL_Debug CMakeFiles\CUDAProjectCL.dir\main.cu.obj | modulation\modulation.lib demodulation\demodulation.lib filtering\filtering.lib myparser\myparser.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cudart.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cuda.lib || CUDAProjectCL\binaries\demodulation.dll CUDAProjectCL\binaries\filtering.dll CUDAProjectCL\binaries\modulation.dll CUDAProjectCL\binaries\myparser.dll
   FLAGS = -D_WINDOWS -Xcompiler=" /EHsc" -Xcompiler=" -Ob0 -Od /RTC1" "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL
-  LINK_LIBRARIES = modulation\modulation.lib  demodulation\demodulation.lib  myparser\myparser.lib  filtering\filtering.lib  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cudart.lib"  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cuda.lib"  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = modulation\modulation.lib  demodulation\demodulation.lib  filtering\filtering.lib  myparser\myparser.lib  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cudart.lib"  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cuda.lib"  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\CUDAProjectCL.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -509,6 +509,137 @@ build demodulation\rebuild_cache: phony demodulation\CMakeFiles\rebuild_cache.ut
 # =============================================================================
 
 # =============================================================================
+# Object build statements for SHARED_LIBRARY target filtering
+
+
+#############################################
+# Order-only phony target for filtering
+
+build cmake_object_order_depends_target_filtering: phony || .
+
+build filtering\CMakeFiles\filtering.dir\src\filtering.cu.obj: CUDA_COMPILER__filtering_unscanned_Debug C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\src\filtering.cu || cmake_object_order_depends_target_filtering
+  DEFINES = -Dfiltering_EXPORTS
+  DEP_FILE = filtering\CMakeFiles\filtering.dir\src\filtering.cu.obj.d
+  FLAGS = -D_WINDOWS -Xcompiler=" /EHsc" -Xcompiler=" -Ob0 -Od /RTC1" -std=c++17 "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi
+  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\lib -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\include\filtering
+  OBJECT_DIR = filtering\CMakeFiles\filtering.dir
+  OBJECT_FILE_DIR = filtering\CMakeFiles\filtering.dir\src
+  TARGET_COMPILE_PDB = filtering\CMakeFiles\filtering.dir\
+  TARGET_PDB = CUDAProjectCL\binaries\filtering.pdb
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target filtering
+
+
+#############################################
+# Link the shared library CUDAProjectCL\binaries\filtering.dll
+
+build CUDAProjectCL\binaries\filtering.dll filtering\filtering.lib: CUDA_SHARED_LIBRARY_LINKER__filtering_Debug filtering\CMakeFiles\filtering.dir\src\filtering.cu.obj
+  LANGUAGE_COMPILE_FLAGS = -D_WINDOWS -Xcompiler=" /EHsc" -Xcompiler=" -Ob0 -Od /RTC1" "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL
+  LINK_LIBRARIES = cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = filtering\CMakeFiles\filtering.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_COMPILE_PDB = filtering\CMakeFiles\filtering.dir\
+  TARGET_FILE = CUDAProjectCL\binaries\filtering.dll
+  TARGET_IMPLIB = filtering\filtering.lib
+  TARGET_PDB = CUDAProjectCL\binaries\filtering.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target filtering_t
+
+
+#############################################
+# Order-only phony target for filtering_t
+
+build cmake_object_order_depends_target_filtering_t: phony || cmake_object_order_depends_target_filtering cmake_object_order_depends_target_gtest filtering\filtering_tconf
+
+build filtering\CMakeFiles\filtering_t.dir\test\filtering_test.cpp.obj: CXX_COMPILER__filtering_t_unscanned_Debug C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\test\filtering_test.cpp || cmake_object_order_depends_target_filtering_t
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
+  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gtest\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gmock\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\include
+  OBJECT_DIR = filtering\CMakeFiles\filtering_t.dir
+  OBJECT_FILE_DIR = filtering\CMakeFiles\filtering_t.dir\test
+  TARGET_COMPILE_PDB = filtering\CMakeFiles\filtering_t.dir\
+  TARGET_PDB = CUDAProjectCL\binaries\filtering_t.pdb
+
+build filtering\CMakeFiles\filtering_t.dir\test\main.cpp.obj: CXX_COMPILER__filtering_t_unscanned_Debug C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\test\main.cpp || cmake_object_order_depends_target_filtering_t
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
+  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gtest\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gmock\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\include
+  OBJECT_DIR = filtering\CMakeFiles\filtering_t.dir
+  OBJECT_FILE_DIR = filtering\CMakeFiles\filtering_t.dir\test
+  TARGET_COMPILE_PDB = filtering\CMakeFiles\filtering_t.dir\
+  TARGET_PDB = CUDAProjectCL\binaries\filtering_t.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target filtering_t
+
+
+#############################################
+# Link the executable CUDAProjectCL\binaries\filtering_t.exe
+
+build CUDAProjectCL\binaries\filtering_t.exe: CXX_EXECUTABLE_LINKER__filtering_t_Debug filtering\CMakeFiles\filtering_t.dir\test\filtering_test.cpp.obj filtering\CMakeFiles\filtering_t.dir\test\main.cpp.obj | googletests\gtest\gtest.lib filtering\filtering.lib || CUDAProjectCL\binaries\filtering.dll CUDAProjectCL\binaries\gtest.dll filtering\filtering_tconf
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = googletests\gtest\gtest.lib  filtering\filtering.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = filtering\CMakeFiles\filtering_t.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = filtering\CMakeFiles\filtering_t.dir\
+  TARGET_FILE = CUDAProjectCL\binaries\filtering_t.exe
+  TARGET_IMPLIB = filtering\filtering_t.lib
+  TARGET_PDB = CUDAProjectCL\binaries\filtering_t.pdb
+
+
+#############################################
+# Utility command for filtering_tconf
+
+build filtering\filtering_tconf: phony
+
+
+#############################################
+# Utility command for test
+
+build filtering\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\filtering && "C:\Program Files\JetBrains\CLion2024.3\bin\cmake\win\x64\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build filtering\test: phony filtering\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build filtering\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\filtering && "C:\Program Files\JetBrains\CLion2024.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build filtering\edit_cache: phony filtering\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build filtering\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\filtering && "C:\Program Files\JetBrains\CLion2024.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL -BC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build filtering\rebuild_cache: phony filtering\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
 # Object build statements for SHARED_LIBRARY target myparser
 
 
@@ -635,137 +766,6 @@ build myparser\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 build myparser\rebuild_cache: phony myparser\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
-# Write statements declared in CMakeLists.txt:
-# C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/CMakeLists.txt
-# =============================================================================
-
-# =============================================================================
-# Object build statements for SHARED_LIBRARY target filtering
-
-
-#############################################
-# Order-only phony target for filtering
-
-build cmake_object_order_depends_target_filtering: phony || .
-
-build filtering\CMakeFiles\filtering.dir\src\filtering.cu.obj: CUDA_COMPILER__filtering_unscanned_Debug C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\src\filtering.cu || cmake_object_order_depends_target_filtering
-  DEFINES = -Dfiltering_EXPORTS
-  DEP_FILE = filtering\CMakeFiles\filtering.dir\src\filtering.cu.obj.d
-  FLAGS = -D_WINDOWS -Xcompiler=" /EHsc" -Xcompiler=" -Ob0 -Od /RTC1" -std=c++17 "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi
-  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\lib -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\include\filtering -isystem "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include"
-  OBJECT_DIR = filtering\CMakeFiles\filtering.dir
-  OBJECT_FILE_DIR = filtering\CMakeFiles\filtering.dir\src
-  TARGET_COMPILE_PDB = filtering\CMakeFiles\filtering.dir\
-  TARGET_PDB = CUDAProjectCL\binaries\filtering.pdb
-
-
-# =============================================================================
-# Link build statements for SHARED_LIBRARY target filtering
-
-
-#############################################
-# Link the shared library CUDAProjectCL\binaries\filtering.dll
-
-build CUDAProjectCL\binaries\filtering.dll filtering\filtering.lib: CUDA_SHARED_LIBRARY_LINKER__filtering_Debug filtering\CMakeFiles\filtering.dir\src\filtering.cu.obj | C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cudart.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cuda.lib
-  LANGUAGE_COMPILE_FLAGS = -D_WINDOWS -Xcompiler=" /EHsc" -Xcompiler=" -Ob0 -Od /RTC1" "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi
-  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL
-  LINK_LIBRARIES = "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cudart.lib"  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cuda.lib"  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = filtering\CMakeFiles\filtering.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  RESTAT = 1
-  TARGET_COMPILE_PDB = filtering\CMakeFiles\filtering.dir\
-  TARGET_FILE = CUDAProjectCL\binaries\filtering.dll
-  TARGET_IMPLIB = filtering\filtering.lib
-  TARGET_PDB = CUDAProjectCL\binaries\filtering.pdb
-
-# =============================================================================
-# Object build statements for EXECUTABLE target filtering_t
-
-
-#############################################
-# Order-only phony target for filtering_t
-
-build cmake_object_order_depends_target_filtering_t: phony || cmake_object_order_depends_target_filtering cmake_object_order_depends_target_gtest filtering\filtering_tconf
-
-build filtering\CMakeFiles\filtering_t.dir\test\filtering_test.cpp.obj: CXX_COMPILER__filtering_t_unscanned_Debug C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\test\filtering_test.cpp || cmake_object_order_depends_target_filtering_t
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
-  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gtest\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gmock\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\include -external:I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include" -external:W0
-  OBJECT_DIR = filtering\CMakeFiles\filtering_t.dir
-  OBJECT_FILE_DIR = filtering\CMakeFiles\filtering_t.dir\test
-  TARGET_COMPILE_PDB = filtering\CMakeFiles\filtering_t.dir\
-  TARGET_PDB = CUDAProjectCL\binaries\filtering_t.pdb
-
-build filtering\CMakeFiles\filtering_t.dir\test\main.cpp.obj: CXX_COMPILER__filtering_t_unscanned_Debug C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\test\main.cpp || cmake_object_order_depends_target_filtering_t
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
-  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gtest\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gmock\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\include -external:I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include" -external:W0
-  OBJECT_DIR = filtering\CMakeFiles\filtering_t.dir
-  OBJECT_FILE_DIR = filtering\CMakeFiles\filtering_t.dir\test
-  TARGET_COMPILE_PDB = filtering\CMakeFiles\filtering_t.dir\
-  TARGET_PDB = CUDAProjectCL\binaries\filtering_t.pdb
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target filtering_t
-
-
-#############################################
-# Link the executable CUDAProjectCL\binaries\filtering_t.exe
-
-build CUDAProjectCL\binaries\filtering_t.exe: CXX_EXECUTABLE_LINKER__filtering_t_Debug filtering\CMakeFiles\filtering_t.dir\test\filtering_test.cpp.obj filtering\CMakeFiles\filtering_t.dir\test\main.cpp.obj | googletests\gtest\gtest.lib filtering\filtering.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cudart.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cuda.lib || CUDAProjectCL\binaries\filtering.dll CUDAProjectCL\binaries\gtest.dll filtering\filtering_tconf
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
-  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = googletests\gtest\gtest.lib  filtering\filtering.lib  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cudart.lib"  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cuda.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = filtering\CMakeFiles\filtering_t.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = filtering\CMakeFiles\filtering_t.dir\
-  TARGET_FILE = CUDAProjectCL\binaries\filtering_t.exe
-  TARGET_IMPLIB = filtering\filtering_t.lib
-  TARGET_PDB = CUDAProjectCL\binaries\filtering_t.pdb
-
-
-#############################################
-# Utility command for filtering_tconf
-
-build filtering\filtering_tconf: phony
-
-
-#############################################
-# Utility command for test
-
-build filtering\CMakeFiles\test.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\filtering && "C:\Program Files\JetBrains\CLion2024.3\bin\cmake\win\x64\bin\ctest.exe" --force-new-ctest-process "
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build filtering\test: phony filtering\CMakeFiles\test.util
-
-
-#############################################
-# Utility command for edit_cache
-
-build filtering\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\filtering && "C:\Program Files\JetBrains\CLion2024.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build filtering\edit_cache: phony filtering\CMakeFiles\edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build filtering\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\filtering && "C:\Program Files\JetBrains\CLion2024.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL -BC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build filtering\rebuild_cache: phony filtering\CMakeFiles\rebuild_cache.util
-
-# =============================================================================
 # Target aliases.
 
 build CUDAProjectCL: phony CUDAProjectCL\binaries\CUDAProjectCL.exe
@@ -824,7 +824,7 @@ build myparser_tconf: phony myparser\myparser_tconf
 #############################################
 # Folder: C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/cmake-build-cudaprojectcl
 
-build all: phony CUDAProjectCL\binaries\CUDAProjectCL.exe googletests\all modulation\all demodulation\all myparser\all filtering\all
+build all: phony CUDAProjectCL\binaries\CUDAProjectCL.exe googletests\all modulation\all demodulation\all filtering\all myparser\all
 
 # =============================================================================
 

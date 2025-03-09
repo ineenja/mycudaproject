@@ -7,5 +7,5 @@
 subdirs("googletests")
 subdirs("modulation")
 subdirs("demodulation")
-subdirs("myparser")
 subdirs("filtering")
+subdirs("myparser")
