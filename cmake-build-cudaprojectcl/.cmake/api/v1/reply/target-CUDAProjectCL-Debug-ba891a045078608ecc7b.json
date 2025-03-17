@@ -59,13 +59,19 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 56,
+				"line" : 57,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 59,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 57,
+				"line" : 60,
 				"parent" : 0
 			}
 		]
@@ -114,7 +120,15 @@
 					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/myparser/include"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 6,
+					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/samplefreqchange"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/samplefreqchange/include"
+				},
+				{
+					"backtrace" : 8,
 					"isSystem" : true,
 					"path" : "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/include"
 				}
@@ -137,16 +151,20 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 4,
-			"id" : "filtering::@13b02bab2b0936666b23"
+			"backtrace" : 2,
+			"id" : "modulation::@4c4c1f85e904cb2cbf88"
 		},
 		{
 			"backtrace" : 3,
 			"id" : "demodulation::@9969b8f5e2c837d817b5"
 		},
 		{
-			"backtrace" : 2,
-			"id" : "modulation::@4c4c1f85e904cb2cbf88"
+			"backtrace" : 4,
+			"id" : "filtering::@13b02bab2b0936666b23"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "samplefreqchange::@9b2c0fb2762a6a73f3b0"
 		},
 		{
 			"backtrace" : 5,
@@ -188,11 +206,16 @@
 			},
 			{
 				"backtrace" : 6,
+				"fragment" : "samplefreqchange\\samplefreqchange.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
 				"fragment" : "\"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\lib\\x64\\cudart.lib\"",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 6,
+				"backtrace" : 7,
 				"fragment" : "\"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\lib\\x64\\cuda.lib\"",
 				"role" : "libraries"
 			},

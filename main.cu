@@ -2,9 +2,9 @@
 #include <iostream>
 
 //#include "modulation/modulation.cuh"
-//#include "demodulation/demodulation.cuh"
+#include "demodulation/demodulation.cuh"
 //#include "myparser/myparser.cuh"
-#include "filtering/filtering.cuh"
+#include "samplefreqchange/samplefreqchange.cuh"
 
 int main() {
 

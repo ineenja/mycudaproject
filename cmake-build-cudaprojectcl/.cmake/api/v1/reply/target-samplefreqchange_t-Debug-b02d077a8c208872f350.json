@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "CUDAProjectCL/binaries/demodulation_t.exe"
+			"path" : "CUDAProjectCL/binaries/samplefreqchange_t.exe"
 		},
 		{
-			"path" : "CUDAProjectCL/binaries/demodulation_t.pdb"
+			"path" : "CUDAProjectCL/binaries/samplefreqchange_t.pdb"
 		}
 	],
 	"backtrace" : 3,
@@ -20,9 +20,9 @@
 		],
 		"files" : 
 		[
-			"demodulation/unittest.cmake",
-			"demodulation/CMakeLists.txt",
-			"demodulation/test/config/conf.cmake"
+			"samplefreqchange/unittest.cmake",
+			"samplefreqchange/CMakeLists.txt",
+			"samplefreqchange/test/config/conf.cmake"
 		],
 		"nodes" : 
 		[
@@ -81,10 +81,10 @@
 			"includes" : 
 			[
 				{
-					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/cmake-build-cudaprojectcl/demodulation"
+					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/cmake-build-cudaprojectcl/samplefreqchange"
 				},
 				{
-					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/demodulation"
+					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/samplefreqchange"
 				},
 				{
 					"backtrace" : 4,
@@ -96,7 +96,7 @@
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/demodulation/include"
+					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/samplefreqchange/include"
 				}
 			],
 			"language" : "CXX",
@@ -119,18 +119,18 @@
 	[
 		{
 			"backtrace" : 4,
-			"id" : "demodulation::@9969b8f5e2c837d817b5"
-		},
-		{
-			"backtrace" : 4,
 			"id" : "gtest::@9a0cee8afed2a44c6706"
 		},
 		{
+			"backtrace" : 4,
+			"id" : "samplefreqchange::@9b2c0fb2762a6a73f3b0"
+		},
+		{
 			"backtrace" : 7,
-			"id" : "demodulation_tconf::@9969b8f5e2c837d817b5"
+			"id" : "samplefreqchange_tconf::@9b2c0fb2762a6a73f3b0"
 		}
 	],
-	"id" : "demodulation_t::@9969b8f5e2c837d817b5",
+	"id" : "samplefreqchange_t::@9b2c0fb2762a6a73f3b0",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -150,7 +150,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "demodulation\\demodulation.lib",
+				"fragment" : "samplefreqchange\\samplefreqchange.lib",
 				"role" : "libraries"
 			},
 			{
@@ -160,12 +160,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "demodulation_t",
-	"nameOnDisk" : "demodulation_t.exe",
+	"name" : "samplefreqchange_t",
+	"nameOnDisk" : "samplefreqchange_t.exe",
 	"paths" : 
 	{
-		"build" : "demodulation",
-		"source" : "demodulation"
+		"build" : "samplefreqchange",
+		"source" : "samplefreqchange"
 	},
 	"sourceGroups" : 
 	[
@@ -183,13 +183,13 @@
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "demodulation/test/demodulation_test.cpp",
+			"path" : "samplefreqchange/test/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "demodulation/test/main.cpp",
+			"path" : "samplefreqchange/test/samplefreqchange_test.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

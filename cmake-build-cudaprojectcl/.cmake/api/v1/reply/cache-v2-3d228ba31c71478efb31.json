@@ -811,7 +811,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "7"
+			"value" : "8"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -2720,6 +2720,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/parsing"
+		},
+		{
+			"name" : "samplefreqchange_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/cmake-build-cudaprojectcl/samplefreqchange"
+		},
+		{
+			"name" : "samplefreqchange_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "samplefreqchange_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/samplefreqchange"
 		},
 		{
 			"name" : "unittest_BINARY_DIR",

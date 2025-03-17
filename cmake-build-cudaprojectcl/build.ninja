@@ -47,12 +47,12 @@ cmake_ninja_workdir = C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUco
 #############################################
 # Order-only phony target for CUDAProjectCL
 
-build cmake_object_order_depends_target_CUDAProjectCL: phony || cmake_object_order_depends_target_demodulation cmake_object_order_depends_target_filtering cmake_object_order_depends_target_modulation cmake_object_order_depends_target_myparser
+build cmake_object_order_depends_target_CUDAProjectCL: phony || cmake_object_order_depends_target_demodulation cmake_object_order_depends_target_filtering cmake_object_order_depends_target_modulation cmake_object_order_depends_target_myparser cmake_object_order_depends_target_samplefreqchange
 
 build CMakeFiles\CUDAProjectCL.dir\main.cu.obj: CUDA_COMPILER__CUDAProjectCL_unscanned_Debug C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\main.cu || cmake_object_order_depends_target_CUDAProjectCL
   DEP_FILE = CMakeFiles\CUDAProjectCL.dir\main.cu.obj.d
   FLAGS = -D_WINDOWS -Xcompiler=" /EHsc" -Xcompiler=" -Ob0 -Od /RTC1" -std=c++17 "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi
-  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\include -isystem "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include"
+  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange\include -isystem "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include"
   OBJECT_DIR = CMakeFiles\CUDAProjectCL.dir
   OBJECT_FILE_DIR = CMakeFiles\CUDAProjectCL.dir
   TARGET_COMPILE_PDB = CMakeFiles\CUDAProjectCL.dir\
@@ -66,10 +66,10 @@ build CMakeFiles\CUDAProjectCL.dir\main.cu.obj: CUDA_COMPILER__CUDAProjectCL_uns
 #############################################
 # Link the executable CUDAProjectCL\binaries\CUDAProjectCL.exe
 
-build CUDAProjectCL\binaries\CUDAProjectCL.exe: CUDA_EXECUTABLE_LINKER__CUDAProjectCL_Debug CMakeFiles\CUDAProjectCL.dir\main.cu.obj | modulation\modulation.lib demodulation\demodulation.lib filtering\filtering.lib myparser\myparser.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cudart.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cuda.lib || CUDAProjectCL\binaries\demodulation.dll CUDAProjectCL\binaries\filtering.dll CUDAProjectCL\binaries\modulation.dll CUDAProjectCL\binaries\myparser.dll
+build CUDAProjectCL\binaries\CUDAProjectCL.exe: CUDA_EXECUTABLE_LINKER__CUDAProjectCL_Debug CMakeFiles\CUDAProjectCL.dir\main.cu.obj | modulation\modulation.lib demodulation\demodulation.lib filtering\filtering.lib myparser\myparser.lib samplefreqchange\samplefreqchange.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cudart.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cuda.lib || CUDAProjectCL\binaries\demodulation.dll CUDAProjectCL\binaries\filtering.dll CUDAProjectCL\binaries\modulation.dll CUDAProjectCL\binaries\myparser.dll CUDAProjectCL\binaries\samplefreqchange.dll
   FLAGS = -D_WINDOWS -Xcompiler=" /EHsc" -Xcompiler=" -Ob0 -Od /RTC1" "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL
-  LINK_LIBRARIES = modulation\modulation.lib  demodulation\demodulation.lib  filtering\filtering.lib  myparser\myparser.lib  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cudart.lib"  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cuda.lib"  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = modulation\modulation.lib  demodulation\demodulation.lib  filtering\filtering.lib  myparser\myparser.lib  samplefreqchange\samplefreqchange.lib  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cudart.lib"  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cuda.lib"  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\CUDAProjectCL.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -390,7 +390,7 @@ build demodulation\CMakeFiles\demodulation.dir\src\demodulation.cu.obj: CUDA_COM
   DEFINES = -Ddemodulation_EXPORTS
   DEP_FILE = demodulation\CMakeFiles\demodulation.dir\src\demodulation.cu.obj.d
   FLAGS = -D_WINDOWS -Xcompiler=" /EHsc" -Xcompiler=" -Ob0 -Od /RTC1" -std=c++17 "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi
-  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\lib -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\include\demodulation
+  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\lib -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\include\demodulation -isystem "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include"
   OBJECT_DIR = demodulation\CMakeFiles\demodulation.dir
   OBJECT_FILE_DIR = demodulation\CMakeFiles\demodulation.dir\src
   TARGET_COMPILE_PDB = demodulation\CMakeFiles\demodulation.dir\
@@ -404,10 +404,10 @@ build demodulation\CMakeFiles\demodulation.dir\src\demodulation.cu.obj: CUDA_COM
 #############################################
 # Link the shared library CUDAProjectCL\binaries\demodulation.dll
 
-build CUDAProjectCL\binaries\demodulation.dll demodulation\demodulation.lib: CUDA_SHARED_LIBRARY_LINKER__demodulation_Debug demodulation\CMakeFiles\demodulation.dir\src\demodulation.cu.obj
+build CUDAProjectCL\binaries\demodulation.dll demodulation\demodulation.lib: CUDA_SHARED_LIBRARY_LINKER__demodulation_Debug demodulation\CMakeFiles\demodulation.dir\src\demodulation.cu.obj | C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cudart.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cuda.lib
   LANGUAGE_COMPILE_FLAGS = -D_WINDOWS -Xcompiler=" /EHsc" -Xcompiler=" -Ob0 -Od /RTC1" "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL
-  LINK_LIBRARIES = cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cudart.lib"  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cuda.lib"  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = demodulation\CMakeFiles\demodulation.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -428,7 +428,7 @@ build cmake_object_order_depends_target_demodulation_t: phony || cmake_object_or
 
 build demodulation\CMakeFiles\demodulation_t.dir\test\demodulation_test.cpp.obj: CXX_COMPILER__demodulation_t_unscanned_Debug C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\test\demodulation_test.cpp || cmake_object_order_depends_target_demodulation_t
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
-  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gtest\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gmock\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\include
+  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gtest\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gmock\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\include -external:I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include" -external:W0
   OBJECT_DIR = demodulation\CMakeFiles\demodulation_t.dir
   OBJECT_FILE_DIR = demodulation\CMakeFiles\demodulation_t.dir\test
   TARGET_COMPILE_PDB = demodulation\CMakeFiles\demodulation_t.dir\
@@ -436,7 +436,7 @@ build demodulation\CMakeFiles\demodulation_t.dir\test\demodulation_test.cpp.obj:
 
 build demodulation\CMakeFiles\demodulation_t.dir\test\main.cpp.obj: CXX_COMPILER__demodulation_t_unscanned_Debug C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\test\main.cpp || cmake_object_order_depends_target_demodulation_t
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
-  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gtest\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gmock\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\include
+  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gtest\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gmock\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\include -external:I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include" -external:W0
   OBJECT_DIR = demodulation\CMakeFiles\demodulation_t.dir
   OBJECT_FILE_DIR = demodulation\CMakeFiles\demodulation_t.dir\test
   TARGET_COMPILE_PDB = demodulation\CMakeFiles\demodulation_t.dir\
@@ -450,10 +450,10 @@ build demodulation\CMakeFiles\demodulation_t.dir\test\main.cpp.obj: CXX_COMPILER
 #############################################
 # Link the executable CUDAProjectCL\binaries\demodulation_t.exe
 
-build CUDAProjectCL\binaries\demodulation_t.exe: CXX_EXECUTABLE_LINKER__demodulation_t_Debug demodulation\CMakeFiles\demodulation_t.dir\test\demodulation_test.cpp.obj demodulation\CMakeFiles\demodulation_t.dir\test\main.cpp.obj | googletests\gtest\gtest.lib demodulation\demodulation.lib || CUDAProjectCL\binaries\demodulation.dll CUDAProjectCL\binaries\gtest.dll demodulation\demodulation_tconf
+build CUDAProjectCL\binaries\demodulation_t.exe: CXX_EXECUTABLE_LINKER__demodulation_t_Debug demodulation\CMakeFiles\demodulation_t.dir\test\demodulation_test.cpp.obj demodulation\CMakeFiles\demodulation_t.dir\test\main.cpp.obj | googletests\gtest\gtest.lib demodulation\demodulation.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cudart.lib C$:\Program$ Files\NVIDIA$ GPU$ Computing$ Toolkit\CUDA\v12.8\lib\x64\cuda.lib || CUDAProjectCL\binaries\demodulation.dll CUDAProjectCL\binaries\gtest.dll demodulation\demodulation_tconf
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = googletests\gtest\gtest.lib  demodulation\demodulation.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = googletests\gtest\gtest.lib  demodulation\demodulation.lib  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cudart.lib"  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\lib\x64\cuda.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = demodulation\CMakeFiles\demodulation_t.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -766,6 +766,137 @@ build myparser\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 build myparser\rebuild_cache: phony myparser\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target samplefreqchange
+
+
+#############################################
+# Order-only phony target for samplefreqchange
+
+build cmake_object_order_depends_target_samplefreqchange: phony || .
+
+build samplefreqchange\CMakeFiles\samplefreqchange.dir\src\samplefreqchange.cu.obj: CUDA_COMPILER__samplefreqchange_unscanned_Debug C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange\src\samplefreqchange.cu || cmake_object_order_depends_target_samplefreqchange
+  DEFINES = -Dsamplefreqchange_EXPORTS
+  DEP_FILE = samplefreqchange\CMakeFiles\samplefreqchange.dir\src\samplefreqchange.cu.obj.d
+  FLAGS = -D_WINDOWS -Xcompiler=" /EHsc" -Xcompiler=" -Ob0 -Od /RTC1" -std=c++17 "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi
+  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\samplefreqchange -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange\lib -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange\include\samplefreqchange
+  OBJECT_DIR = samplefreqchange\CMakeFiles\samplefreqchange.dir
+  OBJECT_FILE_DIR = samplefreqchange\CMakeFiles\samplefreqchange.dir\src
+  TARGET_COMPILE_PDB = samplefreqchange\CMakeFiles\samplefreqchange.dir\
+  TARGET_PDB = CUDAProjectCL\binaries\samplefreqchange.pdb
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target samplefreqchange
+
+
+#############################################
+# Link the shared library CUDAProjectCL\binaries\samplefreqchange.dll
+
+build CUDAProjectCL\binaries\samplefreqchange.dll samplefreqchange\samplefreqchange.lib: CUDA_SHARED_LIBRARY_LINKER__samplefreqchange_Debug samplefreqchange\CMakeFiles\samplefreqchange.dir\src\samplefreqchange.cu.obj
+  LANGUAGE_COMPILE_FLAGS = -D_WINDOWS -Xcompiler=" /EHsc" -Xcompiler=" -Ob0 -Od /RTC1" "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-MDd -Xcompiler=-Zi
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL
+  LINK_LIBRARIES = cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = samplefreqchange\CMakeFiles\samplefreqchange.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_COMPILE_PDB = samplefreqchange\CMakeFiles\samplefreqchange.dir\
+  TARGET_FILE = CUDAProjectCL\binaries\samplefreqchange.dll
+  TARGET_IMPLIB = samplefreqchange\samplefreqchange.lib
+  TARGET_PDB = CUDAProjectCL\binaries\samplefreqchange.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target samplefreqchange_t
+
+
+#############################################
+# Order-only phony target for samplefreqchange_t
+
+build cmake_object_order_depends_target_samplefreqchange_t: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_samplefreqchange samplefreqchange\samplefreqchange_tconf
+
+build samplefreqchange\CMakeFiles\samplefreqchange_t.dir\test\main.cpp.obj: CXX_COMPILER__samplefreqchange_t_unscanned_Debug C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange\test\main.cpp || cmake_object_order_depends_target_samplefreqchange_t
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
+  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\samplefreqchange -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gtest\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gmock\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange\include
+  OBJECT_DIR = samplefreqchange\CMakeFiles\samplefreqchange_t.dir
+  OBJECT_FILE_DIR = samplefreqchange\CMakeFiles\samplefreqchange_t.dir\test
+  TARGET_COMPILE_PDB = samplefreqchange\CMakeFiles\samplefreqchange_t.dir\
+  TARGET_PDB = CUDAProjectCL\binaries\samplefreqchange_t.pdb
+
+build samplefreqchange\CMakeFiles\samplefreqchange_t.dir\test\samplefreqchange_test.cpp.obj: CXX_COMPILER__samplefreqchange_t_unscanned_Debug C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange\test\samplefreqchange_test.cpp || cmake_object_order_depends_target_samplefreqchange_t
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
+  INCLUDES = -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\samplefreqchange -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gtest\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\gmock\include -IC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange\include
+  OBJECT_DIR = samplefreqchange\CMakeFiles\samplefreqchange_t.dir
+  OBJECT_FILE_DIR = samplefreqchange\CMakeFiles\samplefreqchange_t.dir\test
+  TARGET_COMPILE_PDB = samplefreqchange\CMakeFiles\samplefreqchange_t.dir\
+  TARGET_PDB = CUDAProjectCL\binaries\samplefreqchange_t.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target samplefreqchange_t
+
+
+#############################################
+# Link the executable CUDAProjectCL\binaries\samplefreqchange_t.exe
+
+build CUDAProjectCL\binaries\samplefreqchange_t.exe: CXX_EXECUTABLE_LINKER__samplefreqchange_t_Debug samplefreqchange\CMakeFiles\samplefreqchange_t.dir\test\main.cpp.obj samplefreqchange\CMakeFiles\samplefreqchange_t.dir\test\samplefreqchange_test.cpp.obj | googletests\gtest\gtest.lib samplefreqchange\samplefreqchange.lib || CUDAProjectCL\binaries\gtest.dll CUDAProjectCL\binaries\samplefreqchange.dll samplefreqchange\samplefreqchange_tconf
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = googletests\gtest\gtest.lib  samplefreqchange\samplefreqchange.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = samplefreqchange\CMakeFiles\samplefreqchange_t.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = samplefreqchange\CMakeFiles\samplefreqchange_t.dir\
+  TARGET_FILE = CUDAProjectCL\binaries\samplefreqchange_t.exe
+  TARGET_IMPLIB = samplefreqchange\samplefreqchange_t.lib
+  TARGET_PDB = CUDAProjectCL\binaries\samplefreqchange_t.pdb
+
+
+#############################################
+# Utility command for samplefreqchange_tconf
+
+build samplefreqchange\samplefreqchange_tconf: phony
+
+
+#############################################
+# Utility command for test
+
+build samplefreqchange\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\samplefreqchange && "C:\Program Files\JetBrains\CLion2024.3\bin\cmake\win\x64\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build samplefreqchange\test: phony samplefreqchange\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build samplefreqchange\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\samplefreqchange && "C:\Program Files\JetBrains\CLion2024.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build samplefreqchange\edit_cache: phony samplefreqchange\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build samplefreqchange\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl\samplefreqchange && "C:\Program Files\JetBrains\CLion2024.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL -BC:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\cmake-build-cudaprojectcl"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build samplefreqchange\rebuild_cache: phony samplefreqchange\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build CUDAProjectCL: phony CUDAProjectCL\binaries\CUDAProjectCL.exe
@@ -816,6 +947,16 @@ build myparser_t.exe: phony CUDAProjectCL\binaries\myparser_t.exe
 
 build myparser_tconf: phony myparser\myparser_tconf
 
+build samplefreqchange: phony CUDAProjectCL\binaries\samplefreqchange.dll
+
+build samplefreqchange.dll: phony CUDAProjectCL\binaries\samplefreqchange.dll
+
+build samplefreqchange_t: phony CUDAProjectCL\binaries\samplefreqchange_t.exe
+
+build samplefreqchange_t.exe: phony CUDAProjectCL\binaries\samplefreqchange_t.exe
+
+build samplefreqchange_tconf: phony samplefreqchange\samplefreqchange_tconf
+
 # =============================================================================
 # Folder targets.
 
@@ -824,7 +965,7 @@ build myparser_tconf: phony myparser\myparser_tconf
 #############################################
 # Folder: C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/cmake-build-cudaprojectcl
 
-build all: phony CUDAProjectCL\binaries\CUDAProjectCL.exe googletests\all modulation\all demodulation\all filtering\all myparser\all
+build all: phony CUDAProjectCL\binaries\CUDAProjectCL.exe googletests\all modulation\all demodulation\all filtering\all myparser\all samplefreqchange\all
 
 # =============================================================================
 
@@ -869,20 +1010,27 @@ build modulation\all: phony CUDAProjectCL\binaries\modulation.dll CUDAProjectCL\
 build myparser\all: phony CUDAProjectCL\binaries\myparser.dll CUDAProjectCL\binaries\myparser_t.exe
 
 # =============================================================================
+
+#############################################
+# Folder: C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/cmake-build-cudaprojectcl/samplefreqchange
+
+build samplefreqchange\all: phony CUDAProjectCL\binaries\samplefreqchange.dll CUDAProjectCL\binaries\samplefreqchange_t.exe
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCUDAInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\NVIDIA-CUDA.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\NVIDIA.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindCUDAToolkit.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-NVIDIA-CUDA.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\unittest.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\unittest.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\information.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\unittest.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\music.wav C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\unittest.cmake CMakeCache.txt CMakeFiles\3.30.5\CMakeCCompiler.cmake CMakeFiles\3.30.5\CMakeCUDACompiler.cmake CMakeFiles\3.30.5\CMakeCXXCompiler.cmake CMakeFiles\3.30.5\CMakeRCCompiler.cmake CMakeFiles\3.30.5\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCUDAInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\NVIDIA-CUDA.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\NVIDIA.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindCUDAToolkit.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-NVIDIA-CUDA.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\unittest.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\unittest.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\information.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\unittest.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\music.wav C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\unittest.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange\unittest.cmake CMakeCache.txt CMakeFiles\3.30.5\CMakeCCompiler.cmake CMakeFiles\3.30.5\CMakeCUDACompiler.cmake CMakeFiles\3.30.5\CMakeCXXCompiler.cmake CMakeFiles\3.30.5\CMakeRCCompiler.cmake CMakeFiles\3.30.5\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCUDAInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\NVIDIA-CUDA.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\NVIDIA.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindCUDAToolkit.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-NVIDIA-CUDA.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\unittest.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\unittest.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\information.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\unittest.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\music.wav C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\unittest.cmake CMakeCache.txt CMakeFiles\3.30.5\CMakeCCompiler.cmake CMakeFiles\3.30.5\CMakeCUDACompiler.cmake CMakeFiles\3.30.5\CMakeCXXCompiler.cmake CMakeFiles\3.30.5\CMakeRCCompiler.cmake CMakeFiles\3.30.5\CMakeSystem.cmake: phony
+build C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCUDAInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\NVIDIA-CUDA.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Compiler\NVIDIA.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindCUDAToolkit.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows-NVIDIA-CUDA.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion2024.3\bin\cmake\win\x64\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\demodulation\unittest.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\filtering\unittest.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\googletests\gtest\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\information.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\modulation\unittest.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\music.wav C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\myparser\unittest.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange\CMakeLists.txt C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange\test\config\conf.cmake C$:\Users\theiz\OneDrive\Desktop\EngPathStuff\cppSTC\GPUcourse\CUDAProjectCL\samplefreqchange\unittest.cmake CMakeCache.txt CMakeFiles\3.30.5\CMakeCCompiler.cmake CMakeFiles\3.30.5\CMakeCUDACompiler.cmake CMakeFiles\3.30.5\CMakeCXXCompiler.cmake CMakeFiles\3.30.5\CMakeRCCompiler.cmake CMakeFiles\3.30.5\CMakeSystem.cmake: phony
 
 
 #############################################

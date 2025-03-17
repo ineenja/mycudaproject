@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "CUDAProjectCL/binaries/modulation_t.exe"
+			"path" : "CUDAProjectCL/binaries/filtering_t.exe"
 		},
 		{
-			"path" : "CUDAProjectCL/binaries/modulation_t.pdb"
+			"path" : "CUDAProjectCL/binaries/filtering_t.pdb"
 		}
 	],
 	"backtrace" : 3,
@@ -20,9 +20,9 @@
 		],
 		"files" : 
 		[
-			"modulation/unittest.cmake",
-			"modulation/CMakeLists.txt",
-			"modulation/test/config/conf.cmake"
+			"filtering/unittest.cmake",
+			"filtering/CMakeLists.txt",
+			"filtering/test/config/conf.cmake"
 		],
 		"nodes" : 
 		[
@@ -81,10 +81,10 @@
 			"includes" : 
 			[
 				{
-					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/cmake-build-cudaprojectcl/modulation"
+					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/cmake-build-cudaprojectcl/filtering"
 				},
 				{
-					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/modulation"
+					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/filtering"
 				},
 				{
 					"backtrace" : 4,
@@ -96,7 +96,7 @@
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/modulation/include"
+					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/filtering/include"
 				}
 			],
 			"language" : "CXX",
@@ -118,19 +118,19 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 7,
-			"id" : "modulation_tconf::@4c4c1f85e904cb2cbf88"
-		},
-		{
 			"backtrace" : 4,
 			"id" : "gtest::@9a0cee8afed2a44c6706"
 		},
 		{
 			"backtrace" : 4,
-			"id" : "modulation::@4c4c1f85e904cb2cbf88"
+			"id" : "filtering::@13b02bab2b0936666b23"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "filtering_tconf::@13b02bab2b0936666b23"
 		}
 	],
-	"id" : "modulation_t::@4c4c1f85e904cb2cbf88",
+	"id" : "filtering_t::@13b02bab2b0936666b23",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -150,7 +150,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "modulation\\modulation.lib",
+				"fragment" : "filtering\\filtering.lib",
 				"role" : "libraries"
 			},
 			{
@@ -160,12 +160,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "modulation_t",
-	"nameOnDisk" : "modulation_t.exe",
+	"name" : "filtering_t",
+	"nameOnDisk" : "filtering_t.exe",
 	"paths" : 
 	{
-		"build" : "modulation",
-		"source" : "modulation"
+		"build" : "filtering",
+		"source" : "filtering"
 	},
 	"sourceGroups" : 
 	[
@@ -183,13 +183,13 @@
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "modulation/test/main.cpp",
+			"path" : "filtering/test/filtering_test.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "modulation/test/modulation_test.cpp",
+			"path" : "filtering/test/main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

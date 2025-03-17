@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "CUDAProjectCL/binaries/filtering_t.exe"
+			"path" : "CUDAProjectCL/binaries/myparser_t.exe"
 		},
 		{
-			"path" : "CUDAProjectCL/binaries/filtering_t.pdb"
+			"path" : "CUDAProjectCL/binaries/myparser_t.pdb"
 		}
 	],
 	"backtrace" : 3,
@@ -20,9 +20,9 @@
 		],
 		"files" : 
 		[
-			"filtering/unittest.cmake",
-			"filtering/CMakeLists.txt",
-			"filtering/test/config/conf.cmake"
+			"myparser/unittest.cmake",
+			"myparser/CMakeLists.txt",
+			"myparser/test/config/conf.cmake"
 		],
 		"nodes" : 
 		[
@@ -81,10 +81,10 @@
 			"includes" : 
 			[
 				{
-					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/cmake-build-cudaprojectcl/filtering"
+					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/cmake-build-cudaprojectcl/myparser"
 				},
 				{
-					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/filtering"
+					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/myparser"
 				},
 				{
 					"backtrace" : 4,
@@ -96,7 +96,7 @@
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/filtering/include"
+					"path" : "C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/myparser/include"
 				}
 			],
 			"language" : "CXX",
@@ -119,18 +119,18 @@
 	[
 		{
 			"backtrace" : 4,
-			"id" : "filtering::@13b02bab2b0936666b23"
+			"id" : "gtest::@9a0cee8afed2a44c6706"
 		},
 		{
 			"backtrace" : 7,
-			"id" : "filtering_tconf::@13b02bab2b0936666b23"
+			"id" : "myparser_tconf::@38921ffbf2a0037a72ee"
 		},
 		{
 			"backtrace" : 4,
-			"id" : "gtest::@9a0cee8afed2a44c6706"
+			"id" : "myparser::@38921ffbf2a0037a72ee"
 		}
 	],
-	"id" : "filtering_t::@13b02bab2b0936666b23",
+	"id" : "myparser_t::@38921ffbf2a0037a72ee",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -150,7 +150,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "filtering\\filtering.lib",
+				"fragment" : "myparser\\myparser.lib",
 				"role" : "libraries"
 			},
 			{
@@ -160,12 +160,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "filtering_t",
-	"nameOnDisk" : "filtering_t.exe",
+	"name" : "myparser_t",
+	"nameOnDisk" : "myparser_t.exe",
 	"paths" : 
 	{
-		"build" : "filtering",
-		"source" : "filtering"
+		"build" : "myparser",
+		"source" : "myparser"
 	},
 	"sourceGroups" : 
 	[
@@ -183,13 +183,13 @@
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "filtering/test/filtering_test.cpp",
+			"path" : "myparser/test/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "filtering/test/main.cpp",
+			"path" : "myparser/test/myparser_test.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

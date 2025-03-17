@@ -6,7 +6,7 @@ CMake Deprecation Warning at demodulation/unittest.cmake:1 (cmake_minimum_requir
   Update the VERSION argument <min> value or use a ...<max> suffix to tell
   CMake that the project does not need compatibility with older versions.
 Call Stack (most recent call first):
-  demodulation/CMakeLists.txt:19 (include)
+  demodulation/CMakeLists.txt:25 (include)
 
 
 CMake Deprecation Warning at myparser/unittest.cmake:1 (cmake_minimum_required):
@@ -19,6 +19,6 @@ Call Stack (most recent call first):
   myparser/CMakeLists.txt:19 (include)
 
 
--- Configuring done (2.2s)
+-- Configuring done (3.9s)
 -- Generating done (0.2s)
 -- Build files have been written to: C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/cmake-build-cudaprojectcl

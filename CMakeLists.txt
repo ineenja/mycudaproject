@@ -53,6 +53,9 @@ target_link_libraries(${PROJECT_NAME} filtering)
 add_subdirectory(${PROJECT_SOURCE_DIR}/myparser)
 target_link_libraries(${PROJECT_NAME} myparser)
 
+add_subdirectory(${PROJECT_SOURCE_DIR}/samplefreqchange)
+target_link_libraries(${PROJECT_NAME} samplefreqchange)
+
 target_link_libraries(${PROJECT_NAME} CUDA::cudart CUDA::cuda_driver)
 target_include_directories(${PROJECT_NAME} PUBLIC  "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/include")
 
