@@ -3,6 +3,7 @@
 
 #include "cuda_runtime.h"
 #include <iostream>
+#include "myparser/myparser.cuh"
 
 __global__ void memoryRecalculationKernel(float* memory, float* memoryTemp, const float *numerator, const float *denumerator,
                                           const float inputSignalSample, const float outputSignalSample, const unsigned int order){
@@ -54,6 +55,18 @@ void filter(std::vector<float>& inputSignal, std::vector<float>& outputSignal,
     cudaFree(denumeratorPtr);
     cudaFree(memoryPtr);
     cudaFree(memoryTempPtr);
+}
+
+std::vector<float> integrator(std::vector<float>& inSignal, const int sampleFreq){
+    std::vector<float> outSignal(inSignal.size(), 0.0);
+
+    outSignal[0] = inSignal[0] / (2 * ((float)sampleFreq));
+
+    for (size_t i = 1; i < inSignal.size(); ++i){
+        outSignal[i] = outSignal[i-1] + (inSignal[i] + inSignal[i-1]) / (2 * (float)sampleFreq);
+    }
+
+    return outSignal;
 }
 
 

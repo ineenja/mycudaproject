@@ -1,24 +1,31 @@
 #include <vector>
 #include <iostream>
 
-//#include "modulation/modulation.cuh"
+#include "modulation/modulation.cuh"
 #include "demodulation/demodulation.cuh"
-//#include "myparser/myparser.cuh"
-#include "samplefreqchange/samplefreqchange.cuh"
+#include "myparser/myparser.cuh"
+//#include "samplefreqchange/samplefreqchange.cuh"
 
 int main() {
 
-    std::vector<float> inputSignal = {1, 0, 0 ,0 ,0, 0, 0, 0, 0, 0};
-    std::vector<float> outputSignal(inputSignal.size());
-    std::vector<float> numerator = {0.9, 0.1, -0.2}; // нерекурсивная часть, кэфы bi
-    std::vector<float> denumerator = {1, 0.5, 0.01}; // рекурсивная часть, кэфы ai
+    std::vector<float> testSignalIn = {0,1,1,0,0,1,1,0,0,1,1,0};
 
-    filter(inputSignal, outputSignal, numerator, denumerator);
+    float modulationFreq = 2000000;
+    int sampleFreq = 44100;
 
-    std::cout << std::endl;
-    for (float i : outputSignal){
-        std::cout << i << " ";
+    std::vector<float> modulatedSignal = modulatorAM(testSignalIn, modulationFreq, sampleFreq);
+
+    for (float value : modulatedSignal){
+        std::cout << value << " ";
     }
+    std::cout << std::endl;
+
+    std::vector<float> demodulatedSignal = demodulatorAM(modulatedSignal, modulationFreq, sampleFreq);
+
+    for (float value : demodulatedSignal){
+        std::cout << value << " ";
+    }
+    std::cout << std::endl;
 
     return 0;
 }

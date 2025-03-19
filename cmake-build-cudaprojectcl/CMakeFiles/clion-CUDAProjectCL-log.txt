@@ -19,6 +19,6 @@ Call Stack (most recent call first):
   myparser/CMakeLists.txt:19 (include)
 
 
--- Configuring done (3.9s)
--- Generating done (0.2s)
+-- Configuring done (4.0s)
+-- Generating done (0.4s)
 -- Build files have been written to: C:/Users/theiz/OneDrive/Desktop/EngPathStuff/cppSTC/GPUcourse/CUDAProjectCL/cmake-build-cudaprojectcl
